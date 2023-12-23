@@ -1,0 +1,30 @@
+<!-- notes.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Notes</title>
+</head>
+<body>
+    <h1>Your Notes</h1>
+
+    <!-- Display User's Uploaded Files -->
+    <% if (userFiles && userFiles.length > 0) { %>
+        <ul>
+            <% userFiles.forEach(file => { %>
+                <li>
+                    <strong><%= file.fileName %></strong>
+                    - <a href="/download/<%= file._id %>"><button>Download</button></a>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else if (userFiles && userFiles.length === 0) { %>
+        <p>You haven't uploaded any files yet.</p>
+    <% } %>
+
+    <a href="/">Back to Dashboard</a>
+</body>
+</html>

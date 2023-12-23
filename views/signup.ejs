@@ -1,0 +1,40 @@
+<!-- signup.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="parent-cont">
+        <h1>Welcome to PUshare</h1>
+        <div class="container">
+            <h1>Signup</h1>
+            <form action="/signup" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+
+                <button type="submit">Signup</button>
+            </form>
+            
+            <!-- "Already have an account" message and link to login form -->
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

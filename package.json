@@ -1,0 +1,24 @@
+{
+  "name": "pushare",
+  "version": "1.0.0",
+  "description": "pushare",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "purti jain",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.12.3",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.7.0",
+    "passport-local-mongoose": "^8.0.0"
+  }
+}

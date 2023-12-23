@@ -1,0 +1,31 @@
+<!-- login.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="parent-cont">
+        <h1>Welcome To PUshare</h1>
+        <div class="container">
+            <h1>Login</h1>
+            <form action="/login" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            
+            <!-- "Don't have an account" message and link to signup form -->
+            <p>Don't have an account? <a href="/signup">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

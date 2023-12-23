@@ -1,0 +1,98 @@
+<!-- home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css"> <!-- as style is in a css folder -->
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <title>PUshare</title>
+</head>
+<body>
+    <!-- creating a navigation bar -->
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="./img/books2.jpg" alt="logo"></div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contat Us</a></li>
+        </ul>
+        <!-- for right nav -->
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button><!-- so that we can target this perticular button -->
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big " style="font-size: 45px;"> Welcome to PUshare</p>
+                <p class="text-small" style="font-size: 20px;">Sharing notes, unlocking minds. PUshare-Your hub for collaborative learning.</p>
+                <div class="buttons">
+                    <button class="signup btn" id="signupbtn">SignUp</button>
+                    <button class="login btn" id="loginbtn">Login</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="./img/books2.jpg" alt="image" class=""> 
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big">About PUshare</p>
+            <p class="sectionSubtag text-small">At PUshare, we believe in the power of shared knowledge. We've created a dynamic
+                platform where students can come together to collaborate, learn, and excel. Whether you're looking to share your 
+                notes, discover new insights, or connect with your peers, PUshare is here to elevate your educational experience.</p>
+        </div>
+        <div class="thumbnail"><img src="./img/section1img.jpg" alt="books image" class="imgfluid"></div>
+    </section>
+    <section class="section section-left" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">Join the Collaborative Community</p>
+            <p class="sectionSubtag text-small">Join PUshare today and become an integral part of a collaborative community that 
+                values the exchange of ideas. Whether you're a seasoned scholar or a newcomer to campus life, PUshare welcomes you 
+                to a space where notes transform into a collective symphony of wisdom. This is not just a platform; it's a movement
+                towards redefining the way we learn and grow together. Experience the richness of shared knowledge—join PUshare 
+                and witness your academic journey flourish in a community-driven landscape</p>
+        </div>
+        <div class="thumbnail "><img src="img/sectionleft2img.jpg" alt="community image" class="imgfluid"></div>
+    </section>
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">Key Features</p>
+            <p class="sectionSubtag text-small"> PUshare stands out with its user-friendly interface, robust search functionality,
+                and a commitment to creating a space where knowledge knows no bounds. The platform offers a powerful search feature
+                that allows students to quickly find and access relevant notes. Through PUshare, students can share their own notes,
+                contributing to a growing repository of academic resources. Our responsive and intuitive design ensures a 
+                consistent and enjoyable user experience across devices, making learning accessible anytime, anywhere.</p>
+        </div>
+        <div class="thumbnail"><img src="img/section3img.jpg" alt="books image" class="imgfluid"></div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your Email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="ellaborate your concern"></textarea>
+            <button class="btn btn-dark btn-sm">Submit</button>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            copyright &copy;2023 www.PUshare.com - All rights reserved.
+        </p>
+    </footer>
+    <script  src="js/index.js"></script>
+    <script  src="js/resp.js"></script>
+</body>
+</html>
